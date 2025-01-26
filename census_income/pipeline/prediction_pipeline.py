@@ -43,14 +43,14 @@ class CustomData:
     This class is used to create a custom data object.
     """
     def __init__(self,
-                 age:float,
+                 age:int,
                  workclass:str,
-                 final_weight:float,
-                 educationNum:float,
+                 final_weight:int,
+                 educationNum:int,
                  occupation:str,
-                 capital_gain:float,
-                 capital_loss:float,
-                 hours_per_week:float,
+                 capital_gain:int,
+                 capital_loss:int,
+                 hours_per_week:int,
                  native_country:str):
         
         self.age=age

@@ -2,5 +2,6 @@ numpy
 pandas
 scikit-learn
 flask
+mlflow
 
 -e .

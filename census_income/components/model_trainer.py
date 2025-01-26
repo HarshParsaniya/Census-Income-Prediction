@@ -82,7 +82,7 @@ class ModelTrainer:
                 estimator=LogisticRegression(),
                 param_grid=param_grid,
                 scoring=['accuracy', 'f1_weighted', 'roc_auc'],
-                refit='f1_weighted',  # Change refit metric
+                refit='f1_weighted',
                 cv=5,
                 n_jobs=-1,
                 verbose=2,

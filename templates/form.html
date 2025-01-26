@@ -1,0 +1,156 @@
+<html>
+<head>
+    <title>Income Prediction Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background: #ffffff;
+            padding: 20px 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .form-group {
+            flex: 1;
+            margin-right: 50px;
+        }
+
+        .form-group:last-child {
+            margin-right: 15px;
+        }
+
+        .form-group.full-width {
+            flex: 100%;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 7px;
+            font-size: 12px;
+            outline: none;
+        }
+
+        input:focus, select:focus {
+            border-color: #6200ea;
+            box-shadow: 0 0 4px rgba(98, 0, 234, 0.3);
+        }
+
+        .submit-btn {
+            background: #6200ea;
+            color: #fff;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background: #3700b3;
+        }
+
+        @media (max-width: 768px) {
+            .form-row {
+                flex-direction: column;
+            }
+
+            .form-group {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+
+            .form-group:last-child {
+                margin-bottom: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Income Prediction Form</h2>
+        <form action="/result" method="POST">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="form-group">
+                    <label for="workclass">Workclass:</label>
+                    <input type="text" id="workclass" name="workclass" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="final_weight">Final Weight:</label>
+                    <input type="number" id="final_weight" name="final_weight" required>
+                </div>
+                <div class="form-group">
+                    <label for="educationNum">Education Number:</label>
+                    <input type="number" id="educationNum" name="educationNum" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="occupation">Occupation:</label>
+                    <input type="text" id="occupation" name="occupation" required>
+                </div>
+                <div class="form-group">
+                    <label for="capital_gain">Capital Gain:</label>
+                    <input type="number" id="capital_gain" name="capital_gain" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="capital_loss">Capital Loss:</label>
+                    <input type="number" id="capital_loss" name="capital_loss" required>
+                </div>
+                <div class="form-group">
+                    <label for="hours_per_week">Hours Per Week:</label>
+                    <input type="number" id="hours_per_week" name="hours_per_week" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group full-width">
+                    <label for="native_country">Native Country:</label>
+                    <input type="text" id="native_country" name="native_country" required>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

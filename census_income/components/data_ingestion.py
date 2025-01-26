@@ -9,6 +9,8 @@ from sklearn.model_selection import train_test_split
 
 from census_income.exception.exception import CustomException
 
+import mlflow
+
 # Intitialize the Data Ingetion Configuration
 @dataclass
 class DataIngestionconfig:
